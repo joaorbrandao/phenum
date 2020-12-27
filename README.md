@@ -1,5 +1,5 @@
 # PHENUMS
-This package creates a simple way of creating PHP enums.
+This package creates a simple way of creating PHP enums (one more!).
 Your IDE will detect them without using DocBlocks. In the end, it's all about PHP constants! <br>
 <b>This package is still under development! Do not use it in production.</b>
 
@@ -21,12 +21,12 @@ namespace Acme;
 use Joaorbrandao\Phenum\Classes\Enum;
 use Joaorbrandao\Phenum\Traits\Enumerable;
 
-class Fruit extends Enum
+class Peripheral extends Enum
 {
     use Enumerable;
 
-    const APPLE = 'apple';
-    const BANANA = 'banana';
+    const MOUSE = 'mouse';
+    const KEYBOARD = 'keyboard';
 }
 ```
 
@@ -35,14 +35,14 @@ We're talking about PHP constants, so:
 ```php
 <?php
 
-$apple = Fruit::APPLE;
+$mouse = Peripheral::MOUSE;
 ```
 But in case you need some help like getting all defined values, the first, last, etc:
 ```php
 <?php
-$first = Fruit::first(); // 'apple'
-$last = Fruit::last(); // 'banana'
-$exists = Fruit::exists('apple'); // true
+$first = Peripheral::first(); // 'mouse'
+$last = Peripheral::last(); // 'keyboard'
+$exists = Peripheral::exists('mouse'); // true
 ```
 
 ## License
