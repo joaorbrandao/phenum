@@ -1,0 +1,41 @@
+{
+  "name": "joaorbrandao/phenum",
+  "description": "PHP enums made easy.",
+  "homepage": "https://github.com/joaorbrandao/phenum",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "João Brandão",
+      "email": "joaorbrandao.dev@outlook.pt",
+      "homepage": "http://joaorbrandao.github.io/",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.4"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.16",
+    "phpunit/phpunit": "8.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Joaorbrandao\\Phenum\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Joaorbrandao\\Phenum\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "format": "vendor/bin/php-cs-fixer fix",
+    "test": "vendor/bin/phpunit --colors=\"always\"",
+    "test:coverage": "@test --coverage-html tests/coverage",
+    "test:dox": "@test --testdox"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
