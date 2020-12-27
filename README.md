@@ -1,7 +1,6 @@
-# PHENUMS
+# PHENUM
 This package creates a simple way of creating PHP enums (one more!).
-Your IDE will detect them without using DocBlocks. In the end, it's all about PHP constants! <br>
-<b>This package is still under development! Do not use it in production.</b>
+Your IDE will detect them without using DocBlocks. In the end, it's all about PHP constants!
 
 ## Installing 
 ```shell
