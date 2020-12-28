@@ -4,7 +4,7 @@ Your IDE will detect them without using DocBlocks. In the end, it's all about PH
 
 ## Installing 
 ```shell
-composer require joaorbrandao/phenums
+composer require joaorbrandao/phenum
 ```
 
 ## Usage
